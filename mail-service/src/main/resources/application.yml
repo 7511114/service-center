@@ -1,0 +1,6 @@
+info:
+  name: 邮件服务
+  contact: 邮件服务
+
+server:
+  port: 9003

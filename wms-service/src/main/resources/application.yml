@@ -1,0 +1,7 @@
+info:
+  name: 仓储服务
+  contact: 仓储服务
+
+server:
+  port: 9002
+

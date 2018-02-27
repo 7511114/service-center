@@ -1,0 +1,6 @@
+info:
+  name: 短信服务
+  contact: 手机短信服务
+  
+server:
+  port: 9005

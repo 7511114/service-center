@@ -1,0 +1,6 @@
+info:
+  name: 订单服务
+  contact: 订单服务
+
+server:
+  port: 9001
