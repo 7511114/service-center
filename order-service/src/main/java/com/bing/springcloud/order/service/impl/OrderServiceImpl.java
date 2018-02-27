@@ -46,6 +46,7 @@ public class OrderServiceImpl implements IOrderService {
 	OrderOutputChannel orderOutputChannel;
 	
 	@Transactional(rollbackFor={Throwable.class})
+	@Override
 	public void save(OrderDomain order) throws Exception{
 		orderRepository.save(order);
 		//库存锁定
@@ -63,6 +64,7 @@ public class OrderServiceImpl implements IOrderService {
 	}
 	
 	@Transactional(rollbackFor={Throwable.class})
+	@Override
 	public void delete(String orderId) throws Exception{
 		OrderDomain orderDomain = orderRepository.findOne(orderId);
 		orderRepository.delete(orderDomain);
