@@ -23,7 +23,7 @@ import com.bing.springcloud.core.sms.stream.SmsOutputChannel;
 @EnableCircuitBreaker // hystrix熔断
 @EnableFeignClients // feign
 @EnableTransactionManagement // 事务
-@EnableJpaRepositories(basePackages = { "com.dbing.springcloud" })
+@EnableJpaRepositories(basePackages = { "com.bing.springcloud" })
 @EnableBinding({ OrderOutputChannel.class, SmsOutputChannel.class }) // 通过stream绑定MQ
 public class OrderServiceApplication {
 	final static Logger logger = LoggerFactory.getLogger(OrderServiceApplication.class);
