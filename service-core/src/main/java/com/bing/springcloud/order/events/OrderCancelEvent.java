@@ -1,13 +1,13 @@
-package com.bing.springcloud.core.order.events;
+package com.bing.springcloud.order.events;
 
-import com.bing.springcloud.core.order.domains.OrderDomain;
+import com.bing.springcloud.order.domains.OrderDomain;
 
 /**
- * 订单创建事件
+ * 订单取消事件
  * @author chenbing
  *
  */
-public class OrderCreateEvent {
+public class OrderCancelEvent {
 
 	public OrderDomain orderDomain;
 
@@ -19,12 +19,12 @@ public class OrderCreateEvent {
 		this.orderDomain = orderDomain;
 	}
 
-	public OrderCreateEvent(OrderDomain orderDomain) {
+	public OrderCancelEvent(OrderDomain orderDomain) {
 		super();
 		this.orderDomain = orderDomain;
 	}
 
-	public OrderCreateEvent() {
+	public OrderCancelEvent() {
 		super();
 	}
 }

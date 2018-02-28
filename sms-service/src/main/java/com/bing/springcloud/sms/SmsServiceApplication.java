@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.bing.springcloud.core.sms.stream.SmsInputChannel;
+import com.bing.springcloud.sms.stream.SmsInputChannel;
 
 
 // 短信服务

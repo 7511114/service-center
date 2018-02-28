@@ -6,12 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.stereotype.Component;
 
-import com.bing.springcloud.core.mail.domains.MailDomain;
-import com.bing.springcloud.core.order.events.OrderCancelEvent;
-import com.bing.springcloud.core.order.events.OrderCreateEvent;
-import com.bing.springcloud.core.order.stream.OrderChannel;
 import com.bing.springcloud.mail.dao.MailRepository;
+import com.bing.springcloud.mail.domains.MailDomain;
+import com.bing.springcloud.order.events.OrderCancelEvent;
+import com.bing.springcloud.order.events.OrderCreateEvent;
+import com.bing.springcloud.order.stream.OrderChannel;
 
+//订阅order相关的事件
 @Component
 public class OrderEventListener {
 

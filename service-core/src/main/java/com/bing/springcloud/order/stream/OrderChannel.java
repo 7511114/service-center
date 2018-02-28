@@ -1,4 +1,4 @@
-package com.bing.springcloud.core.order.stream;
+package com.bing.springcloud.order.stream;
 
 public interface OrderChannel extends OrderInputChannel,OrderOutputChannel {
 

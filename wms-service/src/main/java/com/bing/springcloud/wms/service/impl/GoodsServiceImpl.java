@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
-import com.bing.springcloud.core.wms.domains.GoodsDomain;
 import com.bing.springcloud.wms.dao.GoodsRepository;
+import com.bing.springcloud.wms.domains.GoodsDomain;
 import com.bing.springcloud.wms.service.IGoodsService;
 
 @Service

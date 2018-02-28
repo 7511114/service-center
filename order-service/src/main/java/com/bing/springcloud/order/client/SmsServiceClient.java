@@ -5,10 +5,10 @@ import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
 
-import com.bing.springcloud.core.order.domains.OrderDomain;
-import com.bing.springcloud.core.sms.domains.SmsDomain;
-import com.bing.springcloud.core.sms.stream.SmsChannel;
-import com.bing.springcloud.core.sms.stream.SmsOutputChannel;
+import com.bing.springcloud.order.domains.OrderDomain;
+import com.bing.springcloud.sms.domains.SmsDomain;
+import com.bing.springcloud.sms.stream.SmsChannel;
+import com.bing.springcloud.sms.stream.SmsOutputChannel;
 
 /**
  * 通过MQ异步发送短信

@@ -13,8 +13,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.bing.springcloud.core.order.stream.OrderOutputChannel;
-import com.bing.springcloud.core.sms.stream.SmsOutputChannel;
+import com.bing.springcloud.order.stream.OrderOutputChannel;
+import com.bing.springcloud.sms.stream.SmsOutputChannel;
 
 // 订单服务
 @SpringBootApplication

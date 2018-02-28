@@ -1,4 +1,4 @@
-package com.bing.springcloud.core.stream.converter;
+package com.bing.springcloud.stream.converter;
 
 import java.nio.charset.Charset;
 import java.util.Collection;

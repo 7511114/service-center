@@ -1,4 +1,4 @@
-package com.bing.springcloud.core.sms.domains;
+package com.bing.springcloud.sms.domains;
 
 import java.io.Serializable;
 

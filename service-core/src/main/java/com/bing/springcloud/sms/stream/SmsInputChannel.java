@@ -1,14 +1,14 @@
-package com.bing.springcloud.core.order.stream;
+package com.bing.springcloud.sms.stream;
 
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.messaging.SubscribableChannel;
 
-public interface OrderInputChannel {
+public interface SmsInputChannel {
 
 	/**
 	 * 这里的channel是用来接收数据的
 	 * @return
 	 */
-	@Input(OrderChannel.CHANNEL)
+	@Input(SmsChannel.CHANNEL)
 	SubscribableChannel input();
 }

@@ -1,4 +1,4 @@
-package com.bing.springcloud.core.sms.stream;
+package com.bing.springcloud.sms.stream;
 
 public interface SmsChannel extends SmsInputChannel, SmsOutputChannel {
 

@@ -1,4 +1,4 @@
-package com.bing.springcloud.core.wms.domains;
+package com.bing.springcloud.wms.domains;
 
 import java.io.Serializable;
 

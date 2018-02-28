@@ -9,11 +9,13 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
+import com.bing.springcloud.order.stream.OrderInputChannel;
+
 //邮件系统
 //监听各个系统的事件，发送不同的邮件
 @SpringBootApplication
-@ComponentScan("com.bing")
-@EnableBinding({})
+@ComponentScan(basePackages={"com.bing"})
+@EnableBinding({OrderInputChannel.class}) // 通过stream绑定MQ
 @EnableEurekaClient
 public class MailServiceApplication {
 

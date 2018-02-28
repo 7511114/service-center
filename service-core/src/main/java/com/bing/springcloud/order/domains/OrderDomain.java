@@ -1,4 +1,4 @@
-package com.bing.springcloud.core.order.domains;
+package com.bing.springcloud.order.domains;
 
 import java.io.Serializable;
 import java.util.Date;

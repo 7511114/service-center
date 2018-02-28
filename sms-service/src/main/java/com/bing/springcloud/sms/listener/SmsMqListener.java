@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.stereotype.Component;
 
-import com.bing.springcloud.core.sms.domains.SmsDomain;
-import com.bing.springcloud.core.sms.stream.SmsChannel;
 import com.bing.springcloud.sms.dao.SmsRepository;
+import com.bing.springcloud.sms.domains.SmsDomain;
+import com.bing.springcloud.sms.stream.SmsChannel;
 
 // 通过stream对MQ的支持，实现异步处理
 //接收新消息

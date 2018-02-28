@@ -1,6 +1,6 @@
 package com.bing.springcloud.order.service;
 
-import com.bing.springcloud.core.order.domains.OrderDomain;
+import com.bing.springcloud.order.domains.OrderDomain;
 
 public interface IOrderService {
 

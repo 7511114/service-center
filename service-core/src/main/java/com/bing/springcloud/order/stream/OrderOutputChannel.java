@@ -1,14 +1,14 @@
-package com.bing.springcloud.core.sms.stream;
+package com.bing.springcloud.order.stream;
 
 import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;
 
-public interface SmsOutputChannel {
+public interface OrderOutputChannel {
 
 	/**
 	 * 这里的channel是用来发送数据的
 	 * @return
 	 */
-	@Output(SmsChannel.CHANNEL)
+	@Output(OrderChannel.CHANNEL)
 	MessageChannel output();
 }

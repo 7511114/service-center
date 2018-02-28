@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-import com.bing.springcloud.core.order.domains.OrderDomain;
+import com.bing.springcloud.order.domains.OrderDomain;
 
 public interface OrderRepository extends PagingAndSortingRepository<OrderDomain, Serializable> {
 
