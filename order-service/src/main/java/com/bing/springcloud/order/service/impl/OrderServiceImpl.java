@@ -1,6 +1,7 @@
 package com.bing.springcloud.order.service.impl;
 
 import java.util.Collections;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -82,6 +83,11 @@ public class OrderServiceImpl implements IOrderService {
 		Object eventType = OrderCancelEvent.class.getSimpleName();
 		orderOutputChannel.output().send(MessageBuilder.createMessage(new OrderCancelEvent(orderDomain), 
 				new MessageHeaders(Collections.singletonMap("event-type", eventType))));
+	}
+
+	@Override
+	public List<OrderDomain> findByPhone(String phone) {
+		return orderRepository.findByPhone(phone);
 	}
 	
 }
